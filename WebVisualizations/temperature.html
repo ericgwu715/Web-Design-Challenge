@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index Page</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand bg-info p-2" href="./index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots    
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./temperature.html">Temperature Plot</a>
+                        <a class="dropdown-item" href="./humidity.html">Humidity Plot</a>
+                        <a class="dropdown-item" href="./cloudiness.html">Cloudiness Plot</a>
+                        <a class="dropdown-item" href="./wind_speed.html">Windspeed Plot</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./index.html">Back to Home Page</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="row">
+            <div class="col-lg-7 col-md-12">
+                    <div class="plot-content">
+
+                        <h1 class="header">Max Temperature</h1>
+                        <hr>
+                        <img src="./images/Fig1.png" alt="Latitude vs. Temperature" id="other-image">
+                        <p>As expected, the temperature increases on one approaches the equator (0 Degrees Latitude) and gets 
+                            colder as you approach the northern (+90) and southern(-90) poles.  The plot seems to suggest that 
+                            temperature at the southern pole is not as extreme, however, this is misleading as there are no 
+                            measurment shows for lattitude below -60, as there are very few cities in this region.</p>
+                    </div>
+                </div>
+
+
+            <div class="col-lg-5 col-md-12">
+                <div class="visual-plot-content">
+                    <h2 class="header">Visualisations</h2>
+                    <hr>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-3">
+                                <a href="temperature.html">
+                                    <img src="./images/Fig1.png" width="150" alt=""> 
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-3">
+                                    <a href="humidity.html">
+                                    <img src="./images/Fig2.png" width="150" alt=""> 
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-3">
+                                    <a href="cloudiness.html">
+                                    <img src="./images/Fig3.png" width="150" alt=""> 
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-3">
+                                    <a href="wind_speed.html">
+                                    <img src="./images/Fig4.png" width="150" alt=""> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+</body>
+</html>
+
